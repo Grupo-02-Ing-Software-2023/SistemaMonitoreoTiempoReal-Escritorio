@@ -1,0 +1,20 @@
+{
+  "name": "simotre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "electron-reload": "^2.0.0-alpha.1",
+    "screenshot-desktop": "^1.15.0"
+  }
+}
