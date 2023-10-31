@@ -2,7 +2,7 @@ const { ipcRenderer } = require("electron")
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    document.getElementById("btn").addEventListener("click", () => {
+    document.getElementById('btnScreenshot').addEventListener("click", () => {
         ipcRenderer.send("screenshot:capture", {})
     })
 
