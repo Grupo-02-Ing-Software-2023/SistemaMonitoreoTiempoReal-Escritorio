@@ -6,17 +6,43 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:" />
     <meta http-equiv="X-Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; img-src 'self' data:" />
-    <!--<meta http-equiv="Content-Security-Policy"
-        content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">-->
     <title>SIMOTRE</title>
 </head>
 
 <body>
-    <main class="container-fluid">
+    <div class="card text-center border-0">
+        <div class="card-body">
+            <h5 class="card-title">Biemvenido a Simotre</h5>
+            <p class="card-text">Aplicación de monitoreo en tiempo real</p>
+            <div class="form-check form-switch">
+                <div class="d-flex justify-content-center">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+                <label class="form-check-label" for="flexSwitchCheckDefault">Iniciar monitoreo</label>
+            </div>
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">Custom column padding</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
         <div class="row">
             <div class="col-md-6 p-4 my-auto">
                 <h2>Bienvenido a SIMOTRE</h2>
@@ -25,8 +51,10 @@
                 <button type="button" class="btn btn-primary btn-lg" id="btnScreenshot">Screenshot</button>
             </div>
         </div>
-    </main>
+        -->
     <script src="../app.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

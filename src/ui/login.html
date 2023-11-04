@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <title>SIMOTRE - Login</title>
 </head>
@@ -20,13 +20,13 @@
                 <div class="col-md-8 col-md-4" id="form1">
                     <form class="bg-light p-4 rounded">
                         <div class="form-outline mb-4">
-                            <input type="email" id="email" class="form-control rounded"
+                            <input type="email" id="email" class="form-control"
                                 placeholder="Enter a valid email address" />
                             <label class="form-label" for="email">Email</label>
                         </div>
 
                         <div class="form-outline mb-3">
-                            <input type="password" id="password" class="form-control rounded"
+                            <input type="password" id="password" class="form-control"
                                 placeholder="Enter password" />
                             <label class="form-label" for="password">Password</label>
                         </div>
@@ -44,7 +44,7 @@
                         -->
 
                         <div class="text-center mt-4 pt-2">
-                            <button type="button" class="btn btn-primary rounded"
+                            <button type="button" class="btn btn-primary"
                                 style="padding-left: 2.5rem; padding-right: 2.5rem;" id="loginButton">Login</button>
                         </div>
                     </form>
@@ -53,6 +53,8 @@
         </div>
     </section>
     <script src="../conecction.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
