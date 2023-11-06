@@ -7,9 +7,7 @@
     <meta http-equiv="X-Content-Security-Policy"
         content="default-src 'self'; script-src 'self'; img-src 'self' data:" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
     <title>SIMOTRE</title>
 </head>
 
@@ -18,40 +16,35 @@
         <div class="card-body">
             <h5 class="card-title">Biemvenido a Simotre</h5>
             <p class="card-text">Aplicación de monitoreo en tiempo real</p>
-            <div class="form-check form-switch">
-                <div class="d-flex justify-content-center">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <div class="row g-2 d-flex justify-content-center align-items-center">
+                <div class="col-auto">
+                    <input id="inputSala" type="text" class="form-control" style="max-height: 50px;" autofocus>
                 </div>
-                <label class="form-check-label" for="flexSwitchCheckDefault">Iniciar monitoreo</label>
+                <div class="col-auto form-check form-switch">
+                    <div class="d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    </div>
+                </div>
+                <label id="mensaje1" class="form-check-label" for="flexSwitchCheckDefault">Conectate a una sala para iniciar</label>
             </div>
             <div class="container">
                 <div class="row g-2">
                     <div class="col-6">
-                        <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="p-3 border bg-light" id="card1">No estas conectado a ninguna sala</div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="p-3 border bg-light" id="card2">No estas conectado a ninguna sala</div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="p-3 border bg-light" id="card3"></div>
                     </div>
                     <div class="col-6">
-                        <div class="p-3 border bg-light">Custom column padding</div>
+                        <div class="p-3 border bg-light" id="card4"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--
-        <div class="row">
-            <div class="col-md-6 p-4 my-auto">
-                <h2>Bienvenido a SIMOTRE</h2>
-                
-                <img src="" alt="" width="100%" id="placeholder" class="mb-4">
-                <button type="button" class="btn btn-primary btn-lg" id="btnScreenshot">Screenshot</button>
-            </div>
-        </div>
-        -->
     <script src="../app.js"></script>
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
